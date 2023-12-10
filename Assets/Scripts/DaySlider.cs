@@ -11,6 +11,6 @@ public class DaySlider : MonoBehaviour
     private void Update()
     {
         _slider.value = _dayCounter.GetCurrentDay();
-        _text.text = _slider.value.ToString() + "/7";
+        _text.text = _slider.value.ToString() + "/6";
     }
 }

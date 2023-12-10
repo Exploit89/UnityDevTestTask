@@ -6,7 +6,6 @@ public class DayCounter : MonoBehaviour
 
     public int GetCurrentDay()
     {
-        // for example
         return _currentDay;
     }
 }
