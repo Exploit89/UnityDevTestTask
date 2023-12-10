@@ -3,10 +3,12 @@ using TMPro;
 
 public class GetReward : MonoBehaviour
 {
-    [SerializeField] private TMP_Text _text;
+    [SerializeField] private TMP_Text _textDay;
+    [SerializeField] private TMP_Text _textRewardAmount;
 
-    public void SetDay(int day)
+    public void SetRewards(int day, int reward)
     {
-        _text.text = "Day " + day.ToString();
+        _textDay.text = "Day " + day.ToString();
+        _textRewardAmount.text = "x" + reward.ToString();
     }
 }

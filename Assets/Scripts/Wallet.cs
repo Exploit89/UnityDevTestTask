@@ -11,4 +11,15 @@ public class Wallet : MonoBehaviour
         _tickets += count;
         _ticketView.text = _tickets.ToString();
     }
+
+    public bool TryBuy(int value)
+    {
+        return value <= _tickets;
+    }
+
+    public void SpendTickets(int count)
+    {
+        _tickets -= count;
+        _ticketView.text = _tickets.ToString();
+    }
 }

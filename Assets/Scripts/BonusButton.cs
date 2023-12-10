@@ -17,7 +17,7 @@ public class BonusButton : MonoBehaviour
         {
             _imageDone.enabled = true;
             _stateHandler.OpenPanel(_getRewards);
-            _getRewards.GetComponent<GetReward>().SetDay(_currentDayBonus);
+            _getRewards.GetComponent<GetReward>().SetRewards(_currentDayBonus, _rewardAmount);
             GetComponent<Button>().interactable = false;
             _playerWallet.AddTickets(_rewardAmount);
         }
